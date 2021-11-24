@@ -29,9 +29,9 @@ struct Notes_Table: View {
                             self.notes.move(fromOffsets: source, toOffset: destination)
                         }
                     }
-                    .navigationBarTitle(Text("Updates"))
+                    .navigationBarTitle(Text("Notes"))
                     .navigationBarItems(leading: Button(action: addUpdate) {
-                        Text("Add Update")
+                        Text("Add Note")
                     }, trailing: EditButton())
             }
             .navigationViewStyle(StackNavigationViewStyle())
